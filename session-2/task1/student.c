@@ -1,9 +1,7 @@
-
 #include <stdio.h>
-#include <string.h>
-
-#include "structure.h"
 #include "student.h"
+#include "structure.h"
+#include <string.h>
 
 /**
  * @brief Calculate the average mark for a student
@@ -31,7 +29,7 @@ float calculate_average(Student student) {
 void display_student(Student student) {
     float average = calculate_average(student);
     
-    printf("Students Information:\n");
+    printf("Student Information:\n");
     printf("Name: %s\n", student.name);
     printf("ID: %d\n", student.id);
     printf("Module marks: ");
